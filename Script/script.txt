@@ -1,0 +1,15 @@
+#! /bin/bash
+#Перемещаюсь в папку Test, тк скрипт у меня вложен в доп.папку Test'a
+cd ..
+#Создаю три папки
+mkdir -p First Second Third
+#Перемещаюсь в первую папку
+cd First
+#Создаю 5 файлов. 3 -txt , 2-json 
+touch 1.txt 2.txt 3.txt one.json two.json
+#Создаю 2 папки
+mkdir -p under_one under_two under_three
+#Просматриваю содержимое папки
+ls -al
+#Перемещаю 2 файла в другую директорию
+mv 1.txt 2.txt ~/Documents/Test/Second/
